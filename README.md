@@ -10,11 +10,11 @@ De gxenerala retejo https://dumps.wikimedia.org/ kaj elsxulti https://dumps.wiki
 
 #### Eltiri apartajn artikolojn el la dosieron xml.
 Mi uzis la ilon https://github.com/attardi/wikiextractor
-
-`git clone https://github.com/attardi/wikiextractor  `
-`mkdir text`  
-`./wikiextractor/WikiExtractor.py  eowiki-latest-pages-articles.xml text`  
-
+```
+git clone https://github.com/attardi/wikiextractor  
+mkdir text  
+./wikiextractor/WikiExtractor.py  eowiki-latest-pages-articles.xml text  
+```
 ### Forvisxi XML etikedojn
 ```
 for f in `find . -type f -name 'wiki_*'`; do  
@@ -23,9 +23,10 @@ for f in `find . -type f -name 'wiki_*'`; do
 done  
 ```
 ### Kunmeti apartajn dosierojn en unu grandan tekstan dosieron
-`for f in `find . -type f -name 'wiki_*'`; do`  
-`	cat $f >> bigfile`  
-
+```
+for f in `find . -type f -name 'wiki_*'`; do  
+	cat $f >> bigfile  
+```
 
 
 	
