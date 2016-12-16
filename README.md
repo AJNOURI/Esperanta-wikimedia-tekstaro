@@ -16,11 +16,12 @@ Mi uzis la ilon https://github.com/attardi/wikiextractor
 `./wikiextractor/WikiExtractor.py  eowiki-latest-pages-articles.xml text`  
 
 ### Forvisxi XML etikedojn
-`for f in `find . -type f -name 'wiki_*'`; do`  
-`	echo "Dosiero: $f"`  
-`	sed -i 's/<[^>]*>//g' $f`  
-`done`  
-
+```
+for f in `find . -type f -name 'wiki_*'`; do  
+	echo "Dosiero: $f"  
+	sed -i 's/<[^>]*>//g' $f  
+done  
+```
 ### Kunmeti apartajn dosierojn en unu grandan tekstan dosieron
 `for f in `find . -type f -name 'wiki_*'`; do`  
 `	cat $f >> bigfile`  
